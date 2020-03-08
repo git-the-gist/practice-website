@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Required meta tags from Bootstrap that allow us to add new information to out html page. These metatags will ensure our website is "mobile ready". It is recommended that we always add them -->
+    <meta charset="utf-8"> <!-- utf-8 is the type of character encoding we'll use to type text on our website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"> <!-- putting all our website's body into a single container. "d-flex" will activate the flex box options available in Bootstrap. They will allow us to create vertically aligned elements. "align-items-center" will vertically align the items in our container class. "h-100" (height-100) will make the <div> container class span the entire html body so that the vertical alignment takes effect on all elements on the page -->
+      <div class="row"> <!-- dividing our text and button into rows -->
+        <header class="text-center col-12"> <!-- putting our text into a header and using Boostrap's class "text-center" to center our text. The "col-12" serves to indicate that we want the section to take up the whole width of the screen -->
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1> <!-- using the Bootstrap class "text-uppercase" to make the letters all uppercases -->
+        </header>
+        <div class="buffer col-12"> <!-- the buffer class is one we created to use in our css sheet. It will allow us to put a little space between the <h1> text and the button -->
+        </div>
+        <section class="text-center col-12"> <!-- creating a section tag to contain our line break and button and using Bootstrap's "text-center" class to center the text. The "col-12" serves to indicate that we want the section to take up the whole width of the screen -->
+          <hr> <!-- adding a horizontal line below our <h1> tag -->
+          <a href="https://mailchi.mp/065953c4a084/ztmstudents"> <!-- adding the link to the sign up form we just completed using MailChimp -->
+            <button class="btn btn-primary btn-xl">Find out more</button> <!-- using Bootstrap's button class to use a Bootstrap button. The "btn-xl" part of the class isn't Bootstrap, but our own addition so that we can modify the size of the button in our css style sheet -->
+          </a>
+        </section>
+    </div>
+  </div>
+  </body>
+</html>

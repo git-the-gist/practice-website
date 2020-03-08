@@ -1,0 +1,54 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* adding our background image in the best way possible using code from css-tricks.com */
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 { /* changing the h1 font's size and color */
+	font-size: 3rem;
+	color: #e2dbdb;
+}
+
+hr { /* changing the <hr> tag's line in our html file to have a different color, a different 
+width, and a different length across the page */
+	border-color: #F05F44;
+	border-width: 3px;
+	max-width: 65px;
+}
+
+.buffer { /* creating space between our <h1> text and our button */
+	height: 10rem;
+}
+
+.btn { /* changing our button's font weight and changing the border radius to make the
+button more circular. Also changing the text to be uppercase */ 
+	font-weight: 700;
+	border-radius: 300px;
+	text-transform: uppercase;
+}
+
+.btn-xl { /* modifying our button's size */
+	padding: 1rem 2rem; /* changing the button's size */
+}
+
+.btn-primary { /* adding properties to our button by referring yet 
+another part of its class */
+	background-color: #F05F44; /* changing our button's color */
+	border-color: #F05F44; /* adding a border color to match our button color because 
+	Bootstrap had a different border color */
+}
+
+.btn-primary:hover { /* overriding Bootstrap's hover effect to change the button to 
+a color of our choice when the mouse hovers over it */
+	background-color: #ee4b08;
+	border-color: #ee4b08;
+	border-width: 4px; /* changing the border's width on hover so it gets bigger when 
+	the mouse hovers over the button */
+}
